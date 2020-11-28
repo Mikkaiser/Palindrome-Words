@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates'
+}
+#box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form input[type = text]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    color: black;
+}
+h1{
+    margin-bottom: 23%;
+    white-space: nowrap;
+    color: #525252
+}
+.iconError,.errorSpan{
+    color: #bd4242;
+    font-size: 18px;
+    font-family: 'Comfortaa';
+}
+.iconHit, .hitSpan{
+    color:hsl(110, 45%, 37%);
+    font-size: 18px;
+    font-family: 'Comfortaa';
+}
+#box-error, #box-hit{
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    padding-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+button{
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    background-color: #3196b5;
+    color: white;
+    width: 30%;
+    font-size: 14px;
+    outline: none;
+    transition: .2s;
+}
+button:hover{
+    background-color: royalblue;
+}
+
