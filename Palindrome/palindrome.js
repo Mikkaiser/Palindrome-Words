@@ -21,27 +21,28 @@ function verifyPalindrome(){
     let secStr;
     let localPoint;
 
-    if(midText == 0){
-        firStr = textInput.slice(0, midPoint);
-        secStr = textInput.slice(midPoint).split("").reverse().join("");
-
-        if(firStr == secStr){
-            alert("Yes! We have a palindrome!");
+        if(midText == 0){
+            firStr = textInput.slice(0, midPoint);
+            secStr = textInput.slice(midPoint).split("").reverse().join("");
+    
+            if(firStr == secStr){
+                alert("Yes! We have a palindrome!");
+            }
+            else if(firStr != secStr){
+                alert("Is not a palindrome!");
+            }
         }
-        else if(firStr != secStr){
-            alert("Is not a palindrome!");
+        else if(midText != 0){
+            localPoint = midPoint - 0.5;
+            firStr = textInput.slice(0, localPoint);
+            secStr = textInput.slice(localPoint + 1).split("").reverse().join("");
+            
+            if(firStr == secStr){
+                alert("Yes! We have a palindrome!")
+            }
+            else if(firStr != secStr){
+                alert("Is not a palindrome!");
+            }
         }
-    }
-    else if(midText != 0){
-        localPoint = midPoint - 0.5;
-        firStr = textInput.slice(0, localPoint);
-        secStr = textInput.slice(localPoint + 1).split("").reverse().join("");
-        
-        if(firStr == secStr){
-            alert("Yes! We have a palindrome!")
-        }
-        else if(firStr != secStr){
-            alert("Is not a palindrome!");
-        }
-    }   
+       
 }

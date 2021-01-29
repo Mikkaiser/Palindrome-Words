@@ -21,8 +21,9 @@ form input[type = text]{
 }
 h1{
     margin-bottom: 23%;
-    white-space: nowrap;
-    color: #525252
+    /* white-space: nowrap; */
+    color: #525252;
+    text-align: center;
 }
 .iconError,.errorSpan{
     color: #bd4242;
@@ -58,3 +59,8 @@ button:hover{
     background-color: royalblue;
 }
 
+@media screen and (max-width: 959px){
+    #box{
+        width: 70%;
+    }
+}
