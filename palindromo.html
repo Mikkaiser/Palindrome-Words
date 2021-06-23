@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Palindrome</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="box">
+            <h1>Is this word/phrase a palindrome?</h1>
+            <form>
+                <div>
+                    <input type="text" name="palindrome" id="typeField" placeholder="Insert here" autofocus>
+                </div>
+                <button onclick="verifyPalindrome()" type="button" id="buttonVerify">Verify</button>
+                <div id="box-error">
+                    <i class="fas fa-times-circle iconError"></i>
+                    <span class="errorSpan">This word isn't a palindrome</span>
+                </div>
+                <div id="box-hit">
+                    <i class="fas fa-check-circle iconHit"></i>
+                    <span class="hitSpan">This word is a palindrome</span>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+        <script src="palindrome.js"></script>
+    </body>
+</html>
